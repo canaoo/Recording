@@ -24,36 +24,48 @@
                             <button id="stopBtn">録音停止</button>
                             <br>
                             <div id="wrap"> 
-                              <div id="inline-block_w1"><button class="white"></button></div>
-                              <div id="inline-block_b1"><button class="black"></button></div>
-                              <div id="inline-block_w2"><button class="white"></button></div>
-                              <div id="inline-block_b2"><button class="black"></button></div>
-                              <div id="inline-block_w3"><button class="white"></button></div>
-                        
-                              <div id="inline-block_w4"><button class="white"></button></div>
-                              <div id="inline-block_b4"><button class="black"></button></div>
-                              <div id="inline-block_w5"><button class="white"></button></div>
-                              <div id="inline-block_b5"><button class="black"></button></div>
-                              <div id="inline-block_w6"><button class="white"></button></div>
-                              <div id="inline-block_b6"><button class="black"></button></div>
-                              <div id="inline-block_w7"><button class="white"></button></div>
+                                <div id="inline-block_w1"><button class="white"></button></div>
+                                <div id="inline-block_b1"><button class="black"></button></div>
+                                <div id="inline-block_w2"><button class="white"></button></div>
+                                <div id="inline-block_b2"><button class="black"></button></div>
+                                <div id="inline-block_w3"><button class="white"></button></div>
+                            
+                                <div id="inline-block_w4"><button class="white"></button></div>
+                                <div id="inline-block_b4"><button class="black"></button></div>
+                                <div id="inline-block_w5"><button class="white"></button></div>
+                                <div id="inline-block_b5"><button class="black"></button></div>
+                                <div id="inline-block_w6"><button class="white"></button></div>
+                                <div id="inline-block_b6"><button class="black"></button></div>
+                                <div id="inline-block_w7"><button class="white"></button></div>
                               
-                              <div id="inline-block_w8"><button class="white"></button></div>
+                                <div id="inline-block_w8"><button class="white"></button></div>
                             </div>
                             <br />
                             <audio controls id="audio"></audio>
                             <br />
-                            <form>
-                              <input type="submit" id="download" value="保存">
-                              <button id="resetBtn">リセット</button>
+                            <form enctype="multipart/form-data">
+                                @csrf
+                                <a id="download" download="test.wav">ダウンロード</a>
+                                <button id="resetBtn">リセット</button>
                             </form>
                             <br>
-                            <script src="{{ secure_asset('build/assets/main.js') }}"></script>
-                            
+                            <form enctype="multipart/form-data">
+                                @csrf
+                                <p><lavel>曲名</lavel>
+                                    <input type="text" name="music-name"></p><br>
+                                <p><lavel>音声ファイル</lavel>
+                                    <input type="file" accept="audio/wav" name="music-file"></p>
+                                <input type="submit" value="保存">
+                            </form>
+                            <br>
+                            <br>
                             <h1 id="概要">Webアプリの概要</h1>
                             <p></p><br>
                             <h1 id="操作方法">キーボードの操作方法</h1>
                             <p></p><br>
+                            <script src="{{ secure_asset('build/assets/main.js') }}"></script>
+                            
+                            
                         </div>
                     </div>
                 </div>

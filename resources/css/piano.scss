@@ -1,0 +1,62 @@
+$black: #000;
+$white: #fff;
+$border: 1.5px;
+$block-w: 0px;
+$block-b: 30px;
+
+/*鍵盤全体*/
+#wrap{
+    position: relative;
+    width: 400px;
+    height: 303px;
+    z-index: 0;
+    margin: 1px 20% 0 30px;
+    border:2px solid $black;
+}
+/*ボタンの初期化*/
+button {
+    background-color: $white;
+    border: none;
+}
+/* 黒鍵 */
+.black{
+    width: 40px;
+    display: block;
+    padding-top: 200px;
+    background-color: $black;
+    border:$border solid $black;
+    
+  }
+  /* 白鍵 */
+.white{
+    width: 50px;
+    display: block;
+    padding-top: 300px;
+    background-color: $white;
+    border:$border solid $black; 
+}
+
+@for $i from 1 through 8 {
+    #inline-block_w#{$i} {
+        position: absolute;
+        left: $block-w;
+        top: 0;
+        z-index: 1;
+        display: inline-block;
+    }
+    $block-w: $block-w + 50px;
+    
+    @if $i == 3 {
+        $block-b: $block-b + 50px;
+    } @else {
+        #inline-block_b#{$i} {
+            position: absolute;
+            left: $block-b;
+            top: 0;
+            z-index: 2;
+            display: inline-block;
+        }
+        $block-b: $block-b + 50px;
+    } 
+}
+
