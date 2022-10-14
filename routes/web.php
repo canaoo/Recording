@@ -21,9 +21,6 @@ Route::get('/', function () {
 Route::get('/1', function () {
     return view('welcome');
 });
-Route::get('/audioapi', function () {
-    return view('webaudioapi');
-});
 
 Route::get('/search', function() {
     return view('search');
