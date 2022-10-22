@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('test', function (Blueprint $table) {
-            $table->id()->autoIncrement();
-            $table->varchar('path');
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+        Schema::create('tests', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('path')->nullable();
+            $table->timestamps();
         });
     }
 

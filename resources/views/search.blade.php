@@ -17,7 +17,7 @@
             <div class="py-12">
                 <div>
                     <h2>検索する</h2>
-                    <form>
+                    <form method="get">
                         @csrf
                         <p>
                             <input type="search" name="search" value="{{request('search')}}" placeholder="キーワードを入力">
@@ -25,6 +25,7 @@
                         </p>
                     </form>
                 </div>
+                recordingの内容:{{ $recording }}
                 @foreach($recording as $rc)
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <br>
@@ -39,12 +40,9 @@
                                 <p class="memo">{{ $rc->recording_file }}</p>
                             </div>
                         </div>
-                    
-                   
                 </div>
             </div>
             @endforeach
-           
         </x-app-layout>
     </body>
 </html>

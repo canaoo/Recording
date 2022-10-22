@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RecordingController;
+use App\Http\Controllers\SaveController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,11 @@ Route::get('/', function () {
     return view('top');
 })->name('top');
 
-Route::get('/recordings/search', function() {
+/*Route::get('/recordings/search', function() {
     return view('search');
-})->name('search');
+})->name('search');*/
+Route::get('/create', [SaveController::class, 'add']);
+Route::post('/create', [SaveController::class, 'create']);
 
 Route::get('/recordings/mypage', function() {
     return view('mypage');
@@ -34,8 +37,8 @@ Route::get('/recordings/search', [RecordingController::class, 'search'])->name('
 
 Route::get('/recordings/timeline', [RecordingController::class, 'timeline'])->name('timeline');
 
-Route::post('/recordings/confirm', [RecordingController::class, 'confirm']);
-Route::post('/recordings/process', [RecordingController::class, 'process']);
+
+Route::post('/recordings/process', [SaveController::class, 'create']);
 
 
 

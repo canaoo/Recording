@@ -13,32 +13,39 @@ class RecordingController extends Controller
     {
         return view('recordings/timeline')->with(['recording' => $recording->get()]);
     }
+
     public function search(Recordings $recording)
     {
-        $articles =  \DB::table('recordings')->latest('updated_at')->where(function ($query) {
-            // 検索機能
-            if ($search = request('search')) {
+        $recording = Recordings::latest();
+        // 登録順にレコーディングテーブルからデータを取る
+        $recording->latest('updated_at')
+                // joinの時にエラーを防ぐため，recordings.idをとらないようにする
+                ->select('recordings.*')
+                // hashtagsをjoinする
+                ->join('hashtags', 'recordings.hashtag_id', '=', 'hashtags.hashtag_id')
+                // tagsをjoinする
+                ->join('tags','tags.tag_id','=','recordings.tag_id')
+                // 検索する
+                ->where(function ($query) {
+                    // $searchを定義する
+                    $search = request('search');
+                    // 名前，メモ，ハッシュタグ，タグから検索する．
+                    $query->where('recording_name', 'LIKE', "%" . $search . "%")
+                        ->orWhere('memo','LIKE',"%" . $search . "%")
+                        ->orWhere('hashtags.name','LIKE',"%" . $search . "%")
+                        ->orWhere('tags.name','LIKE',"%" . $search . "%");
+                });
                 
-                $query  ->where('recording_name', 'LIKE', "%{$search}%")
-                        ->orWhere('memo','LIKE',"%{$search}%")
-                        ->orWhere(function ($hashtag) { 
-                            $hashtag->join('hashtags','hashtags.hashtag_id','=','recordings.hashtag_id')
-                                ->where('hashtags.hashtag','LIKE',"%{$search}%");
-                        })->orWhere(function ($tag) {
-                            $tag->join('tags','tags.tag_id','=','recordings.tag_id')
-                                ->where('tags.tag','LIKE',"%{$search}%");
-                        });
-            }
-            // 8投稿毎にページ移動
-        })->paginate(8);
-        return view('search')->with(['recording' => $recording->get()]);
+        
+        // paginateを最後に実行
+        return view('search')->with(['recording' => $recording->paginate(8)]);
     }
     
     public function form()
     {
         return view('top');
     }
-    public function confirm(Request $request)
+    /*public function confirm(Request $request)
     {
         $this->validate($request, [
            'recording_name'  => 'required',
@@ -47,7 +54,7 @@ class RecordingController extends Controller
         
         $recording = new Recordings($request->all());
         return view('confirm', compact('recording'));
-    }
+    }/*
     public function process(Request $request)
     {
         $action = $request->get('action', 'back');
@@ -64,6 +71,6 @@ class RecordingController extends Controller
         } else {
             return redirect()->route('top')->withInput($input);
         }
-    }
+    }*/
     
 }
