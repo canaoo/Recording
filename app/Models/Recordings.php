@@ -22,4 +22,15 @@ class Recordings extends Model
     {
         return Recordings::all();
     }
+    
+    // Userに対するリレーション
+    public function user()
+    {
+        return $this->belongsTo(UserController::class);
+    }
+    
+     public function hashtag()
+    {
+        return $this->hasMany(RecordingController::class);
+    }
 }

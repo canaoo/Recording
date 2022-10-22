@@ -15,10 +15,10 @@
             @foreach($recording as $rc)
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <p class="time">Fri Sep 23 2022</p>
+                    <p class="time">{{ $rc->updated_at }}</p>
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 bg-white border-b border-gray-200">
-                            <h4 class="music-name">{{ $rc->name }}</h4>
+                            <p class="music-name">{{ $rc->recording_name }}</p>
                             <p class="hashtag">{{ $rc->hashtag_id }}</p>
                             <p class="tag">{{ $rc->tag_id }}</p>
                             <p class="user-name">{{ $rc->user_id }}</p>

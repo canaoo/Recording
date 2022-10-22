@@ -49,12 +49,19 @@
                                 <button id="resetBtn">リセット</button>
                             </form>
                             <br>
-                            <form enctype="multipart/form-data">
+                            @if ($errors->any())
+                                <ul>
+                            @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                            @endforeach
+                                </ul>
+                            @endif
+                            <form action="/recordings/confirm" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <p><lavel>曲名</lavel>
-                                    <input type="text" name="music-name"></p><br>
+                                    <input type="text" name="recording_name"></p><br>
                                 <p><lavel>音声ファイル</lavel>
-                                    <input type="file" accept="audio/wav" name="music-file"></p>
+                                    <input type="file" accept="audio/wav" name="recording_file"></p>
                                 <input type="submit" value="保存">
                             </form>
                             <br>

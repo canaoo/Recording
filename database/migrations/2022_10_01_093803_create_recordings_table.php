@@ -17,14 +17,14 @@ return new class extends Migration
             $table->increments('recording_id');
             $table->String('name');
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->refrences('user_id')->on('users')->onDelete('cascade');
-            $table->String('memo');
-            $table->integer('hashtag_id')->unsigned();
-            $table->foreign('hashtag_id')->refrences('hashtag_id')->on('hashtags')->onDelete('cascade');
-            $table->integer('tag_id')->unsigned();
-            $table->foreign('tag_id')->refrences('tag_id')->on('tags')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->String('memo')->default(null);
+            $table->integer('hashtag_id')->unsigned()->default(null);
+            $table->foreign('hashtag_id')->references('hashtag_id')->on('hashtags')->onDelete('cascade');
+            $table->integer('tag_id')->unsigned()->default(null);
+            $table->foreign('tag_id')->references('tag_id')->on('tags')->onDelete('cascade');
             $table->String('recording_file');
-            $table->String('status');
+            $table->String('status')->default('private');
             $table->timestamps();
         });
     }
