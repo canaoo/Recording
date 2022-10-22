@@ -18,23 +18,26 @@ Route::get('/', function () {
     return view('top');
 })->name('top');
 
-Route::get('/1', function () {
-    return view('welcome');
-});
-
-Route::get('/search', function() {
+Route::get('/recordings/search', function() {
     return view('search');
 })->name('search');
 
-Route::get('/mypage', function() {
+Route::get('/recordings/mypage', function() {
     return view('mypage');
 })->middleware(['auth', 'verified'])->name('mypage');
 
-Route::get('/contact', function() {
+Route::get('/recordings/contact', function() {
     return view('contact');
 })->name('contact');
 
-Route::get('recordings/timeline', [RecordingController::class, 'timeline'])->name('timeline');
+Route::get('/recordings/search', [RecordingController::class, 'search'])->name('search');
+
+Route::get('/recordings/timeline', [RecordingController::class, 'timeline'])->name('timeline');
+
+Route::post('/recordings/confirm', [RecordingController::class, 'confirm']);
+Route::post('/recordings/process', [RecordingController::class, 'process']);
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
