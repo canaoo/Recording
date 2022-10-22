@@ -56,7 +56,7 @@
                             @endforeach
                                 </ul>
                             @endif
-                            <form action="/recordings/confirm" method="post" enctype="multipart/form-data">
+                            <form action="/recordings/process" method="post" enctype="multipart/form-data" style="display:inline">
                                 @csrf
                                 <p><lavel>曲名</lavel>
                                     <input type="text" name="recording_name"></p><br>
