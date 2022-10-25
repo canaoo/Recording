@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\RecordingController;
 use Illuminate\Http\Request;
 use App\Models\Recordings;
+use App\Models\User;
 use Storage;
 
 class SaveController extends Controller
@@ -29,7 +31,14 @@ class SaveController extends Controller
         $path = Storage::disk('s3')->putFile('myprefix', $wav, 'public');
         // アップロードした画像のフルパスを取得
         $recording->recording_file = Storage::disk('s3')->url($path);
+        
         $recording->recording_name = $request->input('recording_name');
+        
+        /*$recording->user_id = Recordings::user();*/
+        $model = new Recordings();
+        $res = $model->user();
+        
+        $recording->user_id = $res;
         
 
         $recording->save();

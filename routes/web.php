@@ -38,7 +38,7 @@ Route::get('/recordings/search', [RecordingController::class, 'search'])->name('
 Route::get('/recordings/timeline', [RecordingController::class, 'timeline'])->name('timeline');
 
 
-Route::post('/recordings/process', [SaveController::class, 'create']);
+Route::post('/recordings/process', [SaveController::class, 'create'])->middleware(['auth', 'verified']);
 
 
 

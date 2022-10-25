@@ -26,11 +26,11 @@ class Recordings extends Model
     // Userに対するリレーション
     public function user()
     {
-        return $this->belongsTo(UserController::class);
+        return $this->belongsTo(User::class);
     }
     
      public function hashtag()
     {
-        return $this->hasMany(RecordingController::class);
+        return $this->hasMany(Recordings::class);
     }
 }
