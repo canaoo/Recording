@@ -47,6 +47,6 @@ class User extends Authenticatable
     // Recordingに対するリレーション
     public function recordings()
     {
-        return $this->hasMany(RecordingController::class);
+        return $this->hasMany(Recordings::class);
     }
 }

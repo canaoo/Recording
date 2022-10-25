@@ -56,6 +56,8 @@
                             @endforeach
                                 </ul>
                             @endif
+                            @if (Auth::user() != null)
+                            {{ Auth::user()->name }}
                             <form action="/recordings/process" method="post" enctype="multipart/form-data" style="display:inline">
                                 @csrf
                                 <p><lavel>曲名</lavel>
@@ -64,6 +66,7 @@
                                     <input type="file" accept="audio/wav" name="recording_file"></p>
                                 <input type="submit" value="保存">
                             </form>
+                            @endif
                             <br>
                             <br>
                             <h1 id="概要">Webアプリの概要</h1>

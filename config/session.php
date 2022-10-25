@@ -180,7 +180,7 @@ return [
     | the HTTP protocol. You are free to modify this option if needed.
     |
     */
-
+    /* HttpOnly 属性は JavaScript からクッキーにアクセスさせないようにする属性。XSS 攻撃を軽減する */
     'http_only' => true,
 
     /*
@@ -195,7 +195,7 @@ return [
     | Supported: "lax", "strict", "none", null
     |
     */
-
+    /* 送信先を「限定する」 SameSite 属性 */
     'same_site' => 'lax',
 
 ];
