@@ -35,10 +35,10 @@ class SaveController extends Controller
         $recording->recording_name = $request->input('recording_name');
         
         /*$recording->user_id = Recordings::user();*/
-        $model = new Recordings();
+        /*$model = new Recordings();
         $res = $model->user();
         
-        $recording->user_id = $res;
+        $recording->user_id = $res;*/
         
 
         $recording->save();
