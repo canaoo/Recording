@@ -6,6 +6,7 @@ use App\Http\Controllers\RecordingController;
 use Illuminate\Http\Request;
 use App\Models\Recordings;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Storage;
 
 class SaveController extends Controller
@@ -39,7 +40,8 @@ class SaveController extends Controller
         $res = $model->user();
         
         $recording->user_id = $res;*/
-        
+        $user_id = auth()->id();
+        $recording->user_id = $user_id;
 
         $recording->save();
 

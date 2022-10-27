@@ -58,12 +58,14 @@
                             @endif
                             @if (Auth::user() != null)
                             {{ Auth::user()->name }}
+                           
                             <form action="/recordings/process" method="post" enctype="multipart/form-data" style="display:inline">
                                 @csrf
                                 <p><lavel>曲名</lavel>
                                     <input type="text" name="recording_name"></p><br>
                                 <p><lavel>音声ファイル</lavel>
                                     <input type="file" accept="audio/wav" name="recording_file"></p>
+                                    
                                 <input type="submit" value="保存">
                             </form>
                             @endif
