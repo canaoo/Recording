@@ -23,7 +23,7 @@
                             <p class="tag">{{ $rc->tag_id }}</p>
                             <p class="user-name">{{ $rc->user_id }}</p>
                             <p class="memo">{{ $rc->memo }}</p>
-                            <p class="memo">{{ $rc->recording_file }}</p>
+                            <audio controls src="{{ $rc->recording_file }}"></audio>
                         </div>
                     </div>
                 </div>

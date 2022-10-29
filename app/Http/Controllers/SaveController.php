@@ -42,6 +42,9 @@ class SaveController extends Controller
         $recording->user_id = $res;*/
         $user_id = auth()->id();
         $recording->user_id = $user_id;
+        $recording->hashtag_id = null;
+        $recording->tag_id = null;
+        $recording->status = 'private';
 
         $recording->save();
 

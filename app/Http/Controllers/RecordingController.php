@@ -32,13 +32,18 @@ class RecordingController extends Controller
                     // 名前，メモ，ハッシュタグ，タグから検索する．
                     $query->where('recording_name', 'LIKE', "%" . $search . "%")
                         ->orWhere('memo','LIKE',"%" . $search . "%")
-                        ->orWhere('hashtags.name','LIKE',"%" . $search . "%")
-                        ->orWhere('tags.name','LIKE',"%" . $search . "%");
+                        ->orWhere('hashtags.hashtag','LIKE',"%" . $search . "%")
+                        ->orWhere('tags.tag','LIKE',"%" . $search . "%");
                 });
                 
         
         // paginateを最後に実行
         return view('search')->with(['recording' => $recording->paginate(8)]);
+    }
+    
+    public function mypage(Recordings $recording)
+    {
+        return view('mypage')->with(['recording' => $recording->get()]);
     }
     
     public function form()

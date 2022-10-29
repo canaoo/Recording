@@ -5,9 +5,9 @@
         <title>Blog</title>
     </head>
     <body>
-        <form action="/create" method="post" enctype="multipart/form-data">
+        <form action="/recordings/mypage" method="post" enctype="multipart/form-data">
             <!-- アップロードフォームの作成 -->
-            <input type="file" name="image">
+            <input type="file" name="wav">
             {{ csrf_field() }}
             <input type="submit" value="アップロード">
         </form>

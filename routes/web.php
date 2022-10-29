@@ -25,9 +25,7 @@ Route::get('/', function () {
 Route::get('/create', [SaveController::class, 'add']);
 Route::post('/create', [SaveController::class, 'create']);
 
-Route::get('/recordings/mypage', function() {
-    return view('mypage');
-})->middleware(['auth', 'verified'])->name('mypage');
+Route::get('/recordings/mypage', [RecordingController::class, 'mypage'])->middleware(['auth', 'verified'])->name('mypage');
 
 Route::get('/recordings/contact', function() {
     return view('contact');
@@ -39,6 +37,7 @@ Route::get('/recordings/timeline', [RecordingController::class, 'timeline'])->na
 
 
 Route::post('/recordings/process', [SaveController::class, 'create'])->middleware(['auth', 'verified']);
+
 
 
 
