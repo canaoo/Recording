@@ -48,6 +48,6 @@ class SaveController extends Controller
 
         $recording->save();
 
-        return view('test/index')->with(['recording' => $recording->get()]);
+        return view('mypage')->with(['recording' => $recording->get()]);
     }
 }

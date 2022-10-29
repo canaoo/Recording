@@ -57,7 +57,6 @@
                                 </ul>
                             @endif
                             @if (Auth::user() != null)
-                            {{ Auth::user()->name }}
                            
                             <form action="/recordings/process" method="post" enctype="multipart/form-data" style="display:inline">
                                 @csrf
