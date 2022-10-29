@@ -17,7 +17,7 @@
             <div class="py-12">
                 <div>
                     <h2>検索する</h2>
-                    <form method="get">
+                    <form method="get" action="/recordings/search">
                         @csrf
                         <p>
                             <input type="search" name="search" value="{{request('search')}}" placeholder="キーワードを入力">

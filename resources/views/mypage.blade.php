@@ -35,9 +35,6 @@
                     </div>
                 </div>
             </div>
-            @else
-            <p>まだ録音はありません。</p>
-            @break
             @endif 
            @endforeach
         </x-app-layout>

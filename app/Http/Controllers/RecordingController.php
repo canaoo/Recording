@@ -16,6 +16,7 @@ class RecordingController extends Controller
 
     public function search(Recordings $recording)
     {
+        
         $recording = Recordings::latest();
         // 登録順にレコーディングテーブルからデータを取る
         $recording->latest('updated_at')
