@@ -1,8 +1,9 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite",
-        "build": "vite build"
+        "compile:sass": "node-sass /resources/scss/piano.scss /resources/piano.css"
+        /*"dev": "vite",
+        "build": "vite build"*/
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",

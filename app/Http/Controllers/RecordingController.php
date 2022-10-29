@@ -14,7 +14,7 @@ class RecordingController extends Controller
         return view('recordings/timeline')->with(['recording' => $recording->get()]);
     }
 
-    public function search(Recordings $recording)
+    public function search()
     {
         
         $recording = Recordings::latest();
