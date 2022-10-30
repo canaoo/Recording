@@ -7,6 +7,8 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resouces/scss/piano.scss',
+                'resouces/scss/piano.css',
+                'resouces/scss/piano.css.map',
                 'resources/js/app.js',
                 'resources/js/bootstrap.js',
                 'resources/js/main.js',
