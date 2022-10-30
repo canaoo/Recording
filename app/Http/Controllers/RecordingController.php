@@ -14,7 +14,7 @@ class RecordingController extends Controller
         return view('recordings/timeline')->with(['recording' => $recording->get()]);
     }
 
-    public function search()
+    public function search(Recordings $recording)
     {
         
         $recording = Recordings::latest();
@@ -23,18 +23,18 @@ class RecordingController extends Controller
                 // joinの時にエラーを防ぐため，recordings.idをとらないようにする
                 ->select('recordings.*')
                 // hashtagsをjoinする
-                ->join('hashtags', 'recordings.hashtag_id', '=', 'hashtags.hashtag_id')
+                //->join('hashtags', 'recordings.hashtag_id', '=', 'hashtags.hashtag_id')
                 // tagsをjoinする
-                ->join('tags','tags.tag_id','=','recordings.tag_id')
+                //->join('tags','tags.tag_id','=','recordings.tag_id')
                 // 検索する
                 ->where(function ($query) {
                     // $searchを定義する
                     $search = request('search');
                     // 名前，メモ，ハッシュタグ，タグから検索する．
                     $query->where('recording_name', 'LIKE', "%" . $search . "%")
-                        ->orWhere('memo','LIKE',"%" . $search . "%")
-                        ->orWhere('hashtags.hashtag','LIKE',"%" . $search . "%")
-                        ->orWhere('tags.tag','LIKE',"%" . $search . "%");
+                        ->orWhere('memo','LIKE',"%" . $search . "%");
+                        //->orWhere('hashtags.hashtag','LIKE',"%" . $search . "%")
+                        //->orWhere('tags.tag','LIKE',"%" . $search . "%");
                 });
                 
         

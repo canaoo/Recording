@@ -34,7 +34,7 @@
                                 <p class="music-name">{{ $rc->recording_name }}</p>
                                 <p class="hashtag">{{ $rc->hashtag_id }}</p>
                                 <p class="tag">{{ $rc->tag_id }}</p>
-                                <p class="user-name">{{ $rc->user_id }}</p>
+                                <p class="user-name">{{ $rc->user->name }}</p>
                                 <p class="memo">{{ $rc->memo }}</p>
                                 <p class="memo">{{ $rc->recording_file }}</p>
                             </div>
