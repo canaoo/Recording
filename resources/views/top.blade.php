@@ -53,6 +53,7 @@
                     </div>
                 </div>
             </div>
+            @if (Auth::user() != null)
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -65,7 +66,7 @@
                             @endforeach
                                 </ul>
                             @endif
-                            @if (Auth::user() != null)
+                            
                         </div>
                         <div class="p-6 bg-white border-b border-gray-200">
                             <form action="/recordings/process" method="post" enctype="multipart/form-data" style="display:inline">
@@ -77,20 +78,21 @@
                                 <br>
                                 <input type="submit" value="保存">
                             </form>
-                            @endif
                             <br>
                             <br>
                             <!--<h1 id="概要">Webアプリの概要</h1>
                             <p></p><br>
                             <h1 id="操作方法">キーボードの操作方法</h1>
                             <p></p><br>-->
-                            <script src="{{ secure_asset('build/assets/main.js') }}"></script>
+                            
                             
                             
                         </div>
                     </div>
                 </div>
             </div>
+            @endif
+            <script src="{{ secure_asset('build/assets/main.js') }}"></script>
         </x-app-layout>
     </body>
 </html>
