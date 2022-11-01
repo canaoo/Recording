@@ -11,7 +11,6 @@
                 </h2>
             </x-slot>
             
-            
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     
@@ -19,12 +18,12 @@
                         <div class="p-6 bg-white border-b border-gray-200">
                             <form action="" method="POST">
                                 @csrf
-                                <p><label>ユーザ名</label>
-                                    <input type="text" name="name"></p><br>
-                                <p><label>メールアドレス</label>
-                                    <inpnut type="text" name="mail"></p><br>
-                                <p><label>お問い合わせ内容</label>
-                                    <textarea name="message" rows="3" cols="40"></textarea></p>
+                                <p><label>ユーザ名</label><br>
+                                    <input type="text" name="name" style="width:200px;"></p><br>
+                                <p><label>メールアドレス</label><br>
+                                    <input type="text" name="mail" style="width:200px;"></p><br>
+                                <p><label>お問い合わせ内容</label><br>
+                                    <textarea name="message" rows="3" cols="40"></textarea></p><br>
                                 <button class="btn btn-success">送信する</button>
                             </form>
                         </div>

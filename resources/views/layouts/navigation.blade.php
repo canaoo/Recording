@@ -4,7 +4,7 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- メニューバーのロゴ -->
-                <div class="shrink-0 flex items-center">
+                <div class="shrink-0 flex items-center" style="margin-left:10%">
                     <a href="{{ route('top') }}">
                         <!--<x-application-logo class="block h-10 w-auto fill-current text-gray-600" />-->
                         <p style="font-weight: bold;font-size: 130%;padding-top:10px;color:dimgray;@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');">Keyboard Recordings</p>
@@ -12,7 +12,7 @@
                 </div>
 
                 <!-- メニューバーのリンク -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" style="margin-left:30%;">
                     <x-nav-link :href="route('top')" :active="request()->routeIs('top')">
                         {{ __('Top') }}
                     </x-nav-link>
