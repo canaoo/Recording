@@ -18,7 +18,7 @@
                     <p class="time">{{ $rc->updated_at }}</p>
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 bg-white border-b border-gray-200">
-                            <p class="music-name">{{ $rc->recording_name }}</p>
+                            <p class="music-name" style="font-size:110%;font-weight: bold;">{{ $rc->recording_name }}</p>
                             <p class="hashtag">{{ $rc->hashtag_id }}</p>
                             <p class="tag">{{ $rc->tag_id }}</p>
                             <p class="user-name">{{ $rc->user->name }}</p>
