@@ -6,7 +6,8 @@
                 <!-- メニューバーのロゴ -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('top') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                        <!--<x-application-logo class="block h-10 w-auto fill-current text-gray-600" />-->
+                        <p style="font-weight: bold;font-size: 130%;padding-top:10px;color:dimgray;@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');">Keyboard Recordings</p>
                     </a>
                 </div>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Keyboard Recordings</title>
         <link href="{{ secure_asset('build/assets/piano.css') }}" rel="stylesheet" media="all">
     </head>
     <body>

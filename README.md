@@ -5,7 +5,7 @@
  ユーザが投稿した録音一覧を表示したり、検索することができます。
  
 # DEMO
- 
+ ![top_keyboard](https://user-images.githubusercontent.com/109420472/199146143-ad1163d0-54d7-4aeb-a0df-400c3a0e749d.png)
  
  
 

@@ -18,8 +18,8 @@
                 <div>
                     <form method="get" action="/recordings/search">
                         @csrf
-                        <p style="margin-left: 10%;">
-                            <input type="search" name="search" value="{{request('search')}}" placeholder="曲名で検索できます">
+                        <p style="margin-left: 5%;">
+                            <input type="search" name="search" value="{{request('search')}}" placeholder="曲名で検索">
                             <input type="submit">
                         </p>
                     </form>
