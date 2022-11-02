@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/*鍵盤全体*/
+#wrap {
+  position: relative;
+  width: 404px;
+  height: 305px;
+  z-index: 0;
+  margin: 2px 20% 0 30px;
+  border: 2px solid #000; }
+
+/*ボタンの初期化*/
+button {
+  background-color: #fff;
+  border: none; }
+
+/* 黒鍵 */
+.black {
+  width: 40px;
+  display: block;
+  padding-top: 200px;
+  background-color: #000;
+  border: 1.5px solid #000; }
+
+/* 白鍵 */
+.white {
+  width: 50px;
+  display: block;
+  padding-top: 300px;
+  background-color: #fff;
+  border: 1.5px solid #000; }
+
+#inline-block_w1 {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  z-index: 1;
+  display: inline-block; }
+
+#inline-block_b1 {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  z-index: 2;
+  display: inline-block; }
+
+#inline-block_w2 {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  z-index: 1;
+  display: inline-block; }
+
+#inline-block_b2 {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  z-index: 2;
+  display: inline-block; }
+
+#inline-block_w3 {
+  position: absolute;
+  left: 100px;
+  top: 0;
+  z-index: 1;
+  display: inline-block; }
+
+#inline-block_w4 {
+  position: absolute;
+  left: 150px;
+  top: 0;
+  z-index: 1;
+  display: inline-block; }
+
+#inline-block_b4 {
+  position: absolute;
+  left: 180px;
+  top: 0;
+  z-index: 2;
+  display: inline-block; }
+
+#inline-block_w5 {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  z-index: 1;
+  display: inline-block; }
+
+#inline-block_b5 {
+  position: absolute;
+  left: 230px;
+  top: 0;
+  z-index: 2;
+  display: inline-block; }
+
+#inline-block_w6 {
+  position: absolute;
+  left: 250px;
+  top: 0;
+  z-index: 1;
+  display: inline-block; }
+
+#inline-block_b6 {
+  position: absolute;
+  left: 280px;
+  top: 0;
+  z-index: 2;
+  display: inline-block; }
+
+#inline-block_w7 {
+  position: absolute;
+  left: 300px;
+  top: 0;
+  z-index: 1;
+  display: inline-block; }
+
+#inline-block_b7 {
+  position: absolute;
+  left: 330px;
+  top: 0;
+  z-index: 2;
+  display: inline-block; }
+
+#inline-block_w8 {
+  position: absolute;
+  left: 350px;
+  top: 0;
+  z-index: 1;
+  display: inline-block; }
+
+#inline-block_b8 {
+  position: absolute;
+  left: 380px;
+  top: 0;
+  z-index: 2;
+  display: inline-block; }
+
+/*# sourceMappingURL=piano.css.map */
