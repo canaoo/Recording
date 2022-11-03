@@ -5,21 +5,32 @@
  ユーザが投稿した録音一覧を表示したり、検索することができます。
  
 ## DEMO
+以下のURLから試すことができます。
+https://keyboardrecordings.herokuapp.com/
+
+テスト用アカウント
+メールアドレス；test@test.com
+パスワード：12345678
+
+
+## Features
+【トップ画面】
  ![top_keyboard](https://user-images.githubusercontent.com/109420472/199146143-ad1163d0-54d7-4aeb-a0df-400c3a0e749d.png)
  ![top_form](https://user-images.githubusercontent.com/109420472/199159501-de26bba9-e9a8-4632-869e-7a43b6ac0f14.png)
  
+ 【タイムライン画面】
  
-
-
-
+ 【検索画面】
  
-## Features
+ 【マイページ画面】
  
-"hoge"のセールスポイントや差別化などを説明する
+ 【お問い合わせ画面】
+ 
+セールスポイントや差別化などを説明する
  
 ## Requirement
  
-"hoge"を動かすのに必要なライブラリなどを列挙する
+動かすのに必要なライブラリなどを列挙する
  
 * huga 3.5.2
 * hogehuga 1.0.2
