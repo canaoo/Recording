@@ -5,11 +5,11 @@
  ユーザが投稿した録音一覧を表示したり、検索することができます。
  
 ## DEMO
-以下のURLから試すことができます。
+以下のURLから試すことができます。<br>
 https://keyboardrecordings.herokuapp.com/
 
-テスト用アカウント
-メールアドレス；test@test.com
+テスト用アカウント<br>
+メールアドレス：test@test.com<br>
 パスワード：12345678
 
 
