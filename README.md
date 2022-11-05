@@ -56,26 +56,14 @@ Requirementで列挙したライブラリなどのインストール方法を説
 pip install huga_package
 ```
  
-## Usage
- 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
- 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
- 
 ## Note
  
 注意点などがあれば書く
  
 ## Author
  
-作成情報を列挙する
- 
 * 作成者：長嶺夏菜
-* 所属：国際電子ビジネス専門学校情報スペシャリスト科
+* 所属：国際電子ビジネス専門学校 情報スペシャリスト科
 * E-mail：kana-nagamine-20c@stu.kbc.ac.jp
  
 ## License
