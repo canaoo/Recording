@@ -18,28 +18,36 @@ https://keyboardrecordings.herokuapp.com/
 キーボードの演奏、演奏の録音・ダウンロード、録音の投稿ができます。
  ![top_keyboard](https://user-images.githubusercontent.com/109420472/199146143-ad1163d0-54d7-4aeb-a0df-400c3a0e749d.png)
  ![top_form](https://user-images.githubusercontent.com/109420472/199159501-de26bba9-e9a8-4632-869e-7a43b6ac0f14.png)
+ <br>
  
  【タイムライン画面】
  ![search](https://user-images.githubusercontent.com/109420472/200114065-af6e83f3-461d-4789-8feb-b6dc0e987f0a.png)
+ <br>
  
  【検索画面】
  ![timeline](https://user-images.githubusercontent.com/109420472/200114168-8eed8675-3333-41c2-b5ef-ef6a59aadc3a.png)
+ <br>
  
  【マイページ画面】
  ![mypage](https://user-images.githubusercontent.com/109420472/200113992-521d0a16-66ec-49b0-be97-7809e2cc6d5c.png)
+ <br>
  
  【お問い合わせ画面】
  ![contact](https://user-images.githubusercontent.com/109420472/200113944-3ad3ac75-3163-4668-9bba-bb8a49277227.png)
+ <br>
  
-セールスポイントや差別化などを説明する
+
  
 ## Requirement
  
-動かすのに必要なライブラリなどを列挙する
- 
-* huga 3.5.2
-* hogehuga 1.0.2
- 
+* "php": "^8.0.2",
+* "doctrine/dbal": "^3.4",
+* "guzzlehttp/guzzle": "^7.2",
+* "laravel/framework": "^9.19",
+* "laravel/sanctum": "^3.0",
+* "laravel/tinker": "^2.7",
+* "league/flysystem-aws-s3-v3": "3.*"
+
 ## Installation
  
 Requirementで列挙したライブラリなどのインストール方法を説明する
