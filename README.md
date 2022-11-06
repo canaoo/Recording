@@ -21,14 +21,17 @@ https://keyboardrecordings.herokuapp.com/
  <br><br>
  
  【タイムライン画面】
+ 投稿された録音が表示されます。
  ![timeline](https://user-images.githubusercontent.com/109420472/200114168-8eed8675-3333-41c2-b5ef-ef6a59aadc3a.png)
  <br><br>
  
  【検索画面】
+ 投稿された録音を曲名で検索できます。
  ![search](https://user-images.githubusercontent.com/109420472/200114065-af6e83f3-461d-4789-8feb-b6dc0e987f0a.png)
  <br><br>
  
  【マイページ画面】
+ ログインユーザが投稿した録音が表示されます。
  ![mypage](https://user-images.githubusercontent.com/109420472/200113992-521d0a16-66ec-49b0-be97-7809e2cc6d5c.png)
  <br><br>
  
