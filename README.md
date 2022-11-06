@@ -21,11 +21,11 @@ https://keyboardrecordings.herokuapp.com/
  <br><br>
  
  【タイムライン画面】
- ![search](https://user-images.githubusercontent.com/109420472/200114065-af6e83f3-461d-4789-8feb-b6dc0e987f0a.png)
+ ![timeline](https://user-images.githubusercontent.com/109420472/200114168-8eed8675-3333-41c2-b5ef-ef6a59aadc3a.png)
  <br><br>
  
  【検索画面】
- ![timeline](https://user-images.githubusercontent.com/109420472/200114168-8eed8675-3333-41c2-b5ef-ef6a59aadc3a.png)
+ ![search](https://user-images.githubusercontent.com/109420472/200114065-af6e83f3-461d-4789-8feb-b6dc0e987f0a.png)
  <br><br>
  
  【マイページ画面】
@@ -50,15 +50,32 @@ https://keyboardrecordings.herokuapp.com/
 
 ## Installation
  
-Requirementで列挙したライブラリなどのインストール方法を説明する
- 
+ 【インストールと設定】
 ```bash
-pip install huga_package
+git clone
+cd recording
+composer install
+npm install
+npm run dev
+cp .env.example .env
+php artisan key:generate
+```
+ 【.envに設定追加する】
+```bash
+DB_DATABASE={db_name}
+DB_USERNAME={db_username}
+DB_PASSWORD={db_password}
+```
+
+【マイグレーション実行，サーバ起動】
+```bash
+php artisan migrate:fresh --seed
+php artisan serve --port=8080
 ```
  
 ## Note
  
-注意点などがあれば書く
+不具合等があった場合、下記にご連絡ください。
  
 ## Author
  
