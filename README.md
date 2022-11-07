@@ -65,9 +65,9 @@ php artisan key:generate
 ```
  【.envに設定追加する】
 ```bash
-DB_DATABASE={db_name}
-DB_USERNAME={db_username}
-DB_PASSWORD={db_password}
+DB_DATABASE={rcp}
+DB_USERNAME={dbuser}
+DB_PASSWORD={}
 ```
 
 【マイグレーション実行，サーバ起動】
