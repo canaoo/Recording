@@ -49,8 +49,12 @@ class SaveController extends Controller
     /* recording_nameの編集 */
     public function edit(Request $request, Recordings $recording)
     {
-        $form = $request->all();
-        
         return view('mypage/confirm')->with(['recording' => $recording->get()]);
+    }
+    public function update(Request $request, Recordings $recording)
+    {
+        $input = $request['recording_name'];
+        $recording->fill($input)->save();
+        return view('mypage')->with(['recording' => $recording->get()]);
     }
 }

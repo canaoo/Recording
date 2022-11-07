@@ -1,11 +1,14 @@
-<form action="/recordings/process" method="post">
+<!-- すべての投稿が編集できてしまう -->
+@foreach($recording as $rc)
+<form action="/recordings/update" method="post">
     @csrf
-    {{ $recording->recording_name }}
+    {{ $rc->recording_name }}
     <br>
     <input type="submit" name="action" value="戻る">
     <input type="submit" name="action" value="保存する">
     
-    @foreach($recording->getAttributes() as $key => $value)
-        <input type="hidden" name="{{$key}}" value="{{$value}}">
-    @endforeach
+    
+        <input type="hidden" name="recording" value="name">
+    
 </form>
+@endforeach
