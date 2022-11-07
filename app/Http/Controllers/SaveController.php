@@ -15,11 +15,6 @@ class SaveController extends Controller
     {
         $test = Test::all();
         return view('test/index',['test'=>$test]);
-    }
-    
-    public function add()
-    {
-        return view('test/create');
     }*/
 
     public function create(Request $request, Recordings $recording)
@@ -49,5 +44,13 @@ class SaveController extends Controller
         $recording->save();
 
         return view('mypage')->with(['recording' => $recording->get()]);
+    }
+    
+    /* recording_nameの編集 */
+    public function edit(Request $request, Recordings $recording)
+    {
+        $form = $request->all();
+        
+        return view('mypage/confirm')->with(['recording' => $recording->get()]);
     }
 }

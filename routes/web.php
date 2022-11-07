@@ -37,6 +37,7 @@ Route::get('/recordings/timeline', [RecordingController::class, 'timeline'])->na
 
 
 Route::post('/recordings/process', [SaveController::class, 'create'])->middleware(['auth', 'verified']);
+Route::post('/recordings/edit', [SaveController::class, 'edit'])->middleware(['auth', 'verified']);
 
 
 
