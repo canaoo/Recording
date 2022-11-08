@@ -11,17 +11,18 @@
                     {{ __('マイページ') }}
                 </h2>
             </x-slot>
+            <form method="post" action="/recordings/edit">
+                @csrf
+                <input type="submit" value="編集">
+                <button>削除</button>
+            </form>
+            
             @foreach($recording as $rc)
             @if(Auth::id() == $rc->user_id)
             
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <p class="time" style="text-align:right;">{{ $rc->updated_at }}</p>
-                    <form method="post" action="/recordings/edit">
-                        @csrf
-                        <input type="submit" value="編集">
-                    </form>
-                    <button>削除</button>
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 bg-white border-b border-gray-200">
                             
