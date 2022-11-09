@@ -12,7 +12,7 @@ class Recordings extends Model
     protected $primaryKey = 'recording_id';
     
     protected $fillable = [
-        'name',
+        'recording_name',
         'memo',
         'recording_file',
         'status',

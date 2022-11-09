@@ -11,11 +11,6 @@
                     {{ __('マイページ') }}
                 </h2>
             </x-slot>
-            <form method="post" action="/recordings/edit">
-                @csrf
-                <input type="submit" value="編集">
-                <button>削除</button>
-            </form>
             
             @foreach($recording as $rc)
             @if(Auth::id() == $rc->user_id)
@@ -25,16 +20,26 @@
                     <p class="time" style="text-align:right;">{{ $rc->updated_at }}</p>
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 bg-white border-b border-gray-200">
-                            
                             @if($rc->recording_file)
                                 <p class="music-name" style="font-size:110%;font-weight: bold;">{{ $rc->recording_name }}</p>
                                 <p>{{ $rc->memo }}</p>
+                                <p>{{ $rc->recording_id }}</p>
                                 <p>{{ $rc->hashtag_id }}</p>
                                 <p>{{ $rc->tag_id }}</p>
                                 <audio controls src="{{ $rc->recording_file }}"></audio>
                                 <br>
                             @endif
-                            
+                            <form method="post" action="/recordings/edit">
+                                @csrf
+                                <button type="submit">編集</button>
+                                <input type="hidden" name="recording_id" value="{{ $rc->recording_id }}">
+                                <input type="hidden" name="recording_name" value="{{ $rc->recording_name }}">
+                            </form>
+                            <form method="post" action="/recordings/delete">
+                                @csrf
+                                <button type="submit">削除</button>
+                                <input type="hidden" name="recording_id" value="{{ $rc->recording_id }}">
+                            </form>
                         </div>
                     </div>
                 </div>

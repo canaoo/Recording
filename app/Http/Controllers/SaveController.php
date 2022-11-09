@@ -11,11 +11,6 @@ use Storage;
 
 class SaveController extends Controller
 {
-    /*public function index(Test $test)
-    {
-        $test = Test::all();
-        return view('test/index',['test'=>$test]);
-    }*/
 
     public function create(Request $request, Recordings $recording)
     {
@@ -49,12 +44,22 @@ class SaveController extends Controller
     /* recording_nameの編集 */
     public function edit(Request $request, Recordings $recording)
     {
-        return view('mypage/confirm')->with(['recording' => $recording->get()]);
+        $name = $request->post('recording_name');
+        $id = $request->post('recording_id');
+        
+        return view('mypage/update')->with(['name' => $name,'id' => $id]);
     }
     public function update(Request $request, Recordings $recording)
     {
-        $input = $request['recording_name'];
-        $recording->fill($input)->save();
+        $recording = Recordings::find($request->post('recording_id'));
+        $recording->fill($request->all())->save();
         return view('mypage')->with(['recording' => $recording->get()]);
+    }
+    
+    public function delete(Request $request, Recordings $recording)
+    {
+        $recording = Recordings::find($request->post('recording_id'));
+        $recording->fill($request->all())->delete();
+        return view('mypage/delete');
     }
 }

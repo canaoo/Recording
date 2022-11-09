@@ -40,6 +40,8 @@ Route::post('/recordings/process', [SaveController::class, 'create'])->middlewar
 Route::post('/recordings/edit', [SaveController::class, 'edit'])->middleware(['auth', 'verified']);
 Route::post('/recordings/update', [SaveController::class, 'update'])->middleware(['auth', 'verified']);
 
+Route::post('/recordings/delete', [SaveController::class, 'delete'])->middleware(['auth', 'verified']);
+
 
 
 
