@@ -67,7 +67,7 @@ php artisan key:generate
 ```bash
 DB_DATABASE={rcp}
 DB_USERNAME={dbuser}
-DB_PASSWORD={}
+DB_PASSWORD={dbuseraws1090}
 ```
 
 【マイグレーション実行，サーバ起動】
