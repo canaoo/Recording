@@ -77,7 +77,7 @@ php artisan serve --port=8080
 ```
  
 ## Note
- 
+作成中のアプリです。 
 不具合等があった場合、下記にご連絡ください。
  
 ## Author
