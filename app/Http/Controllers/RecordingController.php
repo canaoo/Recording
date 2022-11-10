@@ -17,12 +17,10 @@ class RecordingController extends Controller
 
     public function search(Recordings $recording)
     {
-        
-        $recording = Recordings::latest();
         // 登録順にレコーディングテーブルからデータを取る
-        $recording->latest('updated_at')
-                // joinの時にエラーを防ぐため，recordings.idをとらないようにする
-                ->select('recordings.*')
+        $recording = Recordings::latest('updated_at');
+        // joinの時にエラーを防ぐため，recordings.idをとらないようにする
+        $recording->select('recordings.*')
                 // hashtagsをjoinする
                 //->join('hashtags', 'recordings.hashtag_id', '=', 'hashtags.hashtag_id')
                 // tagsをjoinする
