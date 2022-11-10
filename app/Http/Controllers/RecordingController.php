@@ -44,6 +44,7 @@ class RecordingController extends Controller
     
     public function mypage(Recordings $recording)
     {
+        $recording = Recordings::latest('updated_at');
         return view('mypage')->with(['recording' => $recording->get()]);
     }
     
