@@ -14,7 +14,6 @@
             
             @foreach($recording as $rc)
             @if(Auth::id() == $rc->user_id)
-            @for($rc->updated_at )
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <p class="time" style="text-align:right;">{{ $rc->updated_at }}</p>
@@ -44,7 +43,6 @@
                     </div>
                 </div>
             </div>
-            @endfor
             @endif 
            @endforeach
         </x-app-layout>
