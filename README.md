@@ -32,6 +32,7 @@ https://keyboardrecordings.herokuapp.com/
  
  【マイページ画面】
  ログインユーザが投稿した録音が表示されます。
+ 録音の曲名の編集、削除が可能です。
  ![mypage](https://user-images.githubusercontent.com/109420472/200113992-521d0a16-66ec-49b0-be97-7809e2cc6d5c.png)
  <br><br>
  
