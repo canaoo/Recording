@@ -25,11 +25,6 @@ class SaveController extends Controller
         
         $recording->recording_name = $request->input('recording_name');
         
-        /*$recording->user_id = Recordings::user();*/
-        /*$model = new Recordings();
-        $res = $model->user();
-        
-        $recording->user_id = $res;*/
         $user_id = auth()->id();
         $recording->user_id = $user_id;
         $recording->hashtag_id = null;
