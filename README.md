@@ -9,7 +9,7 @@
 https://keyboardrecordings.herokuapp.com/
 
 テスト用アカウント<br>
-メールアドレス：test@test.com<br>
+メールアドレス：test@example.com<br>
 パスワード：12345678
 
 
