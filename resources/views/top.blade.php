@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <title>Keyboard Recordings</title>
         <link href="{{ secure_asset('build/assets/piano.css') }}" rel="stylesheet" media="all">
+        <link href="{{ secure_asset('build/assets/custom.css') }}" rel="stylesheet" media="all">
     </head>
     <body>
         <x-app-layout>

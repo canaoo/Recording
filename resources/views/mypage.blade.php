@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>マイページ</title>
+        <link href="{{ secure_asset('build/assets/custom.css') }}" rel="stylesheet" media="all">
     </head>
     <body>
         <x-app-layout>
