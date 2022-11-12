@@ -22,7 +22,6 @@
                             @if($rc->recording_file)
                                 <p class="music-name" style="font-size:110%;font-weight: bold;">{{ $rc->recording_name }}</p>
                                 <p>{{ $rc->memo }}</p>
-                                <p>{{ $rc->recording_id }}</p>
                                 <p>{{ $rc->hashtag_id }}</p>
                                 <p>{{ $rc->tag_id }}</p>
                                 <audio controls src="{{ $rc->recording_file }}"></audio>
