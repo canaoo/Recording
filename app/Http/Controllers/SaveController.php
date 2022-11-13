@@ -41,13 +41,13 @@ class SaveController extends Controller
     {
         $name = $request->post('recording_name');
         $id = $request->post('recording_id');
-        
-        return view('mypage/update')->with(['name' => $name,'id' => $id]);
+        $memo = $request->post('memo');
+        return view('mypage/update')->with(['name' => $name,'id' => $id, 'memo' => $memo]);
     }
     public function update(Request $request, Recordings $recording)
     {
         $recording = Recordings::find($request->post('recording_id'));
-        $recording->fill($request->all())->save();
+        $recording->fill($request->all())->save();/*memoが登録できない*/
         return view('mypage')->with(['recording' => $recording->get()]);
     }
     
@@ -58,3 +58,4 @@ class SaveController extends Controller
         return view('mypage/delete');
     }
 }
+
