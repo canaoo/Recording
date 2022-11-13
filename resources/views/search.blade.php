@@ -2,7 +2,6 @@
     <head>
         <meta charset="UTF-8">
         <title>検索</title>
-        <!--<link rel="stylesheet" href="./css/">-->
     </head>
     <body>
         <x-app-layout>
@@ -11,9 +10,6 @@
                     {{ __('検索') }}
                 </h2>
             </x-slot>
-            
-            
-            
             <div class="py-12">
                 <div>
                     <form method="get" action="/recordings/search">

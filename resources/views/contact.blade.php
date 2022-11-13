@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>お問い合わせ</title>
+        <!--<link href="{{ secure_asset('build/assets/custom.7447f65f.css') }}" rel="stylesheet" media="all">-->
     </head>
     <body>
         <x-app-layout>
@@ -14,7 +16,7 @@
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     
-                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg center">
                         <div class="p-6 bg-white border-b border-gray-200">
                             <form action="" method="POST">
                                 @csrf

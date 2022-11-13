@@ -23,8 +23,6 @@
                                 <button type="button" onclick="history.back()">戻る</button>
                                 <input type="submit" name="action" value="保存する">
                                 <input type="hidden" name="recording_id" value="{{$id}}">
-                                
-                                    
                             </form>
                         </div>
                     </div>
