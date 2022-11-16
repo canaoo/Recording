@@ -12,7 +12,7 @@
 
         <!-- Scripts -->
         @vite([
-            'resources/css/app.css', 'resources/scss/piano.scss', 'resources/js/app.js', 
+            'resources/css/app.css', 'resources/scss/piano.scss', 'resources/js/app.js','resources/css/custom.css', 
             'resources/js/bootstrap.js', 'resources/js/main.js', 'resources/js/test.js'
         ])
     </head>
