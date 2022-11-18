@@ -20,9 +20,9 @@
                                 <p>曲名を変更する</p>
                                 <input type="text" name="recording_name" value="{{$name}}">
                                 <br><br>
-                                <p>メモ</p>
-                                <textarea rows="3" cols="30" value="{{$memo}}"></textarea>
-                                <br><br>
+                                <!--<p>メモ</p>
+                                <textarea rows="3" cols="30" value="{{$memo}}"></textarea>-
+                                <br><br>-->
                                 <button type="button" onclick="history.back()">戻る</button>
                                 <input type="submit" name="action" value="保存する">
                                 <input type="hidden" name="recording_id" value="{{$id}}">
