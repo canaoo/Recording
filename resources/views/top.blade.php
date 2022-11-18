@@ -72,6 +72,7 @@
                         <div class="p-6 bg-white border-b border-gray-200">
                             <form action="/recordings/process" method="post" enctype="multipart/form-data" style="display:inline">
                                 @csrf
+                                <!-- 必須事項を入力しないと保存できないようにする →JavaScript? -->
                                 <p><lavel>曲名</lavel>
                                     <input type="text" name="recording_name"></p><br>
                                 <p><lavel>音声ファイル</lavel>
