@@ -85,7 +85,7 @@ php artisan serve --port=8080
 ## Author
  
 * 作成者：長嶺夏菜
-* 所属：国際電子ビジネス専門学校 情報スペシャリスト科
+* 所属：国際電子ビジネス専門学校 情報スペシャリスト科 サイバーセキュリティコース
 * E-mail：kana-nagamine-20c@stu.kbc.ac.jp
  
 ## License
