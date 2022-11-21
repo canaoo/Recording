@@ -22,7 +22,7 @@ https://keyboardrecordings.herokuapp.com/
  <br><br>
  
  【タイムライン画面】
- 投稿された録音が表示されます。
+ 自分や他の人が投稿した録音を聴くことができます。
  ![timeline](https://user-images.githubusercontent.com/109420472/200114168-8eed8675-3333-41c2-b5ef-ef6a59aadc3a.png)
  <br><br>
  
