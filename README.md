@@ -27,7 +27,7 @@ https://keyboardrecordings.herokuapp.com/
  <br><br>
  
  【検索画面】
- 投稿された録音を曲名で検索できます。
+ 自分や他の人が投稿した録音を曲名で検索できます。
  ![search](https://user-images.githubusercontent.com/109420472/200114065-af6e83f3-461d-4789-8feb-b6dc0e987f0a.png)
  <br><br>
  
