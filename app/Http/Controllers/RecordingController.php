@@ -38,7 +38,7 @@ class RecordingController extends Controller
                 
         
         // paginateを最後に実行
-        return view('search')->with(['recording' => $recording->paginate(8)]);
+        return view('search')->with(['recording' => $recording->paginate(8)]);//8投稿ごと
     }
     
     public function mypage(Recordings $recording)
