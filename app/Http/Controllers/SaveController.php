@@ -44,13 +44,14 @@ class SaveController extends Controller
         $memo = $request->post('memo');
         return view('mypage/update')->with(['name' => $name,'id' => $id, 'memo' => $memo]);
     }
+    /* recordingsテーブルの更新 */
     public function update(Request $request, Recordings $recording)
     {
         $recording = Recordings::find($request->post('recording_id'));
         $recording->fill($request->all())->save();/*memoが登録できない*/
         return view('mypage')->with(['recording' => $recording->get()]);
     }
-    
+    /* 削除 */
     public function delete(Request $request, Recordings $recording)
     {
         $recording = Recordings::find($request->post('recording_id'));
