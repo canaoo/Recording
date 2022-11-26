@@ -24,6 +24,7 @@
                             <button id="startBtn">録音開始</button>
                             <button id="stopBtn">録音停止</button>
                             <br>
+                            <!-- キーボード本体 -->
                             <div id="wrap"> 
                                 <div id="inline-block_w1"><button class="white"></button></div>
                                 <div id="inline-block_b1"><button class="black"></button></div>
@@ -41,9 +42,10 @@
                               
                                 <div id="inline-block_w8"><button class="white"></button></div>
                             </div>
-                            <br />
+                            <br>
+                            <!-- オーディオプレイヤーの表示 -->
                             <audio controls id="audio"></audio>
-                            <br />
+                            <br>
                             <form enctype="multipart/form-data">
                                 @csrf
                                 <a id="download" download="test.wav">ダウンロード</a>
@@ -54,6 +56,7 @@
                     </div>
                 </div>
             </div>
+            <!-- ログインユーザのみに投稿フォームを表示する -->
             @if (Auth::user() != null)
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
