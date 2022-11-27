@@ -6,6 +6,7 @@
  
 ## DEMO
 以下のURLから試すことができます。<br>
+※現在、Herokuのアップグレードに対応中です。<br>
 https://keyboardrecordings.herokuapp.com/
 
 テスト用アカウント<br>
