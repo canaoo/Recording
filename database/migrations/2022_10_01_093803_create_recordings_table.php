@@ -23,7 +23,7 @@ return new class extends Migration
             $table->foreign('hashtag_id')->references('hashtag_id')->on('hashtags')->onDelete('cascade');
             $table->integer('tag_id')->nullable()->unsigned()->default(null);
             $table->foreign('tag_id')->references('tag_id')->on('tags')->onDelete('cascade');
-            $table->String('recording_file')->nullable();
+            $table->String('recording_file');
             $table->String('status')->default('private');
             $table->timestamps();
         });
