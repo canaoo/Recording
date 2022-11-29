@@ -2,3 +2,23 @@
 .center {
     text-align: center;
 }
+.size {
+    width: 100%;
+    text-align: left;
+}
+.profile {
+    
+    text-align: right;
+}
+.post {
+    display: inline-block;
+    width: 70%;
+    
+}
+.custom {
+    display: inline-block;
+    width: 20%;
+    height: 50%;
+    top: 0;
+}
+

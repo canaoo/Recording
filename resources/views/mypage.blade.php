@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>マイページ</title>
-        <!--<link href="{{ secure_asset('build/assets/custom.7447f65f.css') }}" rel="stylesheet" media="all">-->
+        <link href="{{ secure_asset('build/assets/custom.css') }}" rel="stylesheet" media="all">
     </head>
     <body>
         <x-app-layout>
@@ -12,10 +12,10 @@
                     {{ __('マイページ') }}
                 </h2>
             </x-slot>
-            
+            <div class="post">
             @foreach($recording as $rc)
             @if(Auth::id() == $rc->user_id)
-            <div class="py-12">
+            <div class="py-12 size">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <p class="time" style="text-align:right;">{{ $rc->updated_at }}</p>
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -45,6 +45,15 @@
             </div>
             @endif 
            @endforeach
+           </div>
+            <div class="py-12 custom">
+               <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 profile">
+                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                       <div class="p-6 bg-white border-b border-gray-200">contents</div>
+                    </div>
+                </div>
+            </div>
+
         </x-app-layout>
         <h2></h2>
         
