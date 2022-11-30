@@ -12,13 +12,15 @@
 }
 .post {
     display: inline-block;
+    /*position: fixed;*/
     width: 70%;
     
 }
 .custom {
     display: inline-block;
+    /*position: fixed;*/
     width: 20%;
     height: 50%;
-    top: 0;
+    top: 0px;
 }
 
