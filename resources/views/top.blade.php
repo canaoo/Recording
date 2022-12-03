@@ -26,21 +26,21 @@
                             <br>
                             <!-- キーボード本体 -->
                             <div id="wrap"> 
-                                <div id="inline-block_w1"><button class="white"></button></div>
-                                <div id="inline-block_b1"><button class="black"></button></div>
-                                <div id="inline-block_w2"><button class="white"></button></div>
-                                <div id="inline-block_b2"><button class="black"></button></div>
-                                <div id="inline-block_w3"><button class="white"></button></div>
+                                <div id="inline-block_w1"><button class="white"></button></div><!-- C -->
+                                <div id="inline-block_b1"><button class="black"></button></div><!-- C# -->
+                                <div id="inline-block_w2"><button class="white"></button></div><!-- D -->
+                                <div id="inline-block_b2"><button class="black"></button></div><!-- D# -->
+                                <div id="inline-block_w3"><button class="white"></button></div><!-- E -->
                             
-                                <div id="inline-block_w4"><button class="white"></button></div>
-                                <div id="inline-block_b4"><button class="black"></button></div>
-                                <div id="inline-block_w5"><button class="white"></button></div>
-                                <div id="inline-block_b5"><button class="black"></button></div>
-                                <div id="inline-block_w6"><button class="white"></button></div>
-                                <div id="inline-block_b6"><button class="black"></button></div>
-                                <div id="inline-block_w7"><button class="white"></button></div>
+                                <div id="inline-block_w4"><button class="white"></button></div><!-- F -->
+                                <div id="inline-block_b4"><button class="black"></button></div><!-- F# -->
+                                <div id="inline-block_w5"><button class="white"></button></div><!-- G -->
+                                <div id="inline-block_b5"><button class="black"></button></div><!-- G# -->
+                                <div id="inline-block_w6"><button class="white"></button></div><!-- A -->
+                                <div id="inline-block_b6"><button class="black"></button></div><!-- A# -->
+                                <div id="inline-block_w7"><button class="white"></button></div><!-- B -->
                               
-                                <div id="inline-block_w8"><button class="white"></button></div>
+                                <div id="inline-block_w8"><button class="white"></button></div><!-- C -->
                             </div>
                             <br>
                             <!-- オーディオプレイヤーの表示 -->
@@ -75,11 +75,10 @@
                         <div class="p-6 bg-white border-b border-gray-200">
                             <form action="/recordings/process" method="post" enctype="multipart/form-data" style="display:inline">
                                 @csrf
-                                <!-- 必須事項を入力しないと保存できないようにする →JavaScript? -->
                                 <p><lavel>曲名</lavel>
-                                    <input type="text" name="recording_name"></p><br>
+                                    <input type="text" name="recording_name" required></p><br>
                                 <p><lavel>音声ファイル</lavel>
-                                    <input type="file" accept="audio/wav" name="recording_file"></p>
+                                    <input type="file" accept="audio/wav" name="recording_file" required></p>
                                 <br>
                                 <input type="submit" value="保存">
                             </form>
