@@ -46,11 +46,13 @@
             @endif 
            @endforeach
            </div>
-            <div class="py-12 custom">
-               <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 profile">
-                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                       <div class="p-6 bg-white border-b border-gray-200">contents</div>
-                    </div>
+            <div class="custom profile fixed">
+                <div class="overflow-hidden sm:rounded-lg p-6 bg-white border-b border-gray-200">
+                    <h3>プロフィール</h3>
+                    <br>
+                    <p>{{ Auth::user()->name }} さん</p>
+                    <br>
+                    <p><投稿数> 3件</p>
                 </div>
             </div>
 

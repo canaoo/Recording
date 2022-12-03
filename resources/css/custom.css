@@ -7,20 +7,19 @@
     text-align: left;
 }
 .profile {
-    
-    text-align: right;
+    top: 25%;
+    left: 70%;
+    padding: 3em 0;
 }
 .post {
-    display: inline-block;
-    /*position: fixed;*/
     width: 70%;
     
 }
 .custom {
-    display: inline-block;
-    /*position: fixed;*/
     width: 20%;
-    height: 50%;
-    top: 0px;
 }
+.fixed {
+    position: fixed;
+}
+
 
