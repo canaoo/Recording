@@ -48,11 +48,13 @@
            </div>
             <div class="custom profile fixed">
                 <div class="overflow-hidden sm:rounded-lg p-6 bg-white border-b border-gray-200">
+                    @if(Auth::id() == Recordings::user_id())
                     <h3>プロフィール</h3>
                     <br>
                     <p>{{ Auth::user()->name }} さん</p>
                     <br>
                     <p><投稿数> 3件</p>
+                    @endif
                 </div>
             </div>
 
