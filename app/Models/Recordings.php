@@ -22,6 +22,10 @@ class Recordings extends Model
     {
         return Recordings::all();
     }
+    public function getid()
+    {
+        return Recordings::id();
+    }
     
     // Userに対するリレーション
     public function user()
