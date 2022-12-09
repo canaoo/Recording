@@ -21,8 +21,8 @@
                     </nav>-->
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 bg-white border-b border-gray-200">
-                            <button id="startBtn">録音開始</button>
-                            <button id="stopBtn">録音停止</button>
+                            <button id="startBtn"><img src="https://user-images.githubusercontent.com/109420472/206719628-31dd1da2-771b-4972-883f-a2cba432ccf5.png"></button>
+                            <button id="stopBtn"><img src="https://user-images.githubusercontent.com/109420472/206719937-091bd03b-f25e-49b4-9145-ba1d39e8ce7f.png"></button>
                             <br>
                             <!-- キーボード本体 -->
                             <div id="wrap"> 
