@@ -21,5 +21,8 @@
 .fixed {
     position: fixed;
 }
+.recording_button {
+    padding-left: 350px;
+}
 
 
