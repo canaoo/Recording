@@ -24,6 +24,7 @@
                             <div class="recording_button">
                                 <button id="startBtn"><img src="https://user-images.githubusercontent.com/109420472/206719628-31dd1da2-771b-4972-883f-a2cba432ccf5.png">録音</button>
                                 <button id="stopBtn"><img src="https://user-images.githubusercontent.com/109420472/206719937-091bd03b-f25e-49b4-9145-ba1d39e8ce7f.png">停止</button>
+                                <button id="resetBtn"><img src="https://user-images.githubusercontent.com/109420472/206908056-2343e466-070a-488c-aaba-c73997e0fe84.png">リセット</button>
                                 <br>
                             </div>
                             <!-- キーボード本体 -->
