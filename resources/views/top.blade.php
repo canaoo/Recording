@@ -50,11 +50,11 @@
                             <!-- オーディオプレイヤーの表示 -->
                             <audio controls id="audio"></audio>
                             <br>
-                            <form enctype="multipart/form-data">
+                            <!--<form enctype="multipart/form-data">
                                 @csrf
                                 <a id="download" download="test.wav">ダウンロード</a>
                                 <button id="resetBtn">リセット</button>
-                            </form>
+                            </form>-->
                             <br>
                         </div>
                     </div>
