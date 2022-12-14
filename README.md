@@ -18,6 +18,7 @@ https://keyboardrecordings.herokuapp.com/
 キーボードの演奏、演奏の録音・ダウンロード、録音の投稿ができます。<br>
 録音の投稿は、登録済みユーザのみです。
  ![top_keyboard](https://user-images.githubusercontent.com/109420472/199146143-ad1163d0-54d7-4aeb-a0df-400c3a0e749d.png)
+ ![top_keyboard](https://user-images.githubusercontent.com/109420472/207630685-9653f19c-a12b-4aae-bdf5-e41878b62ed0.png)
  ![top_form](https://user-images.githubusercontent.com/109420472/199159501-de26bba9-e9a8-4632-869e-7a43b6ac0f14.png)
  <br><br>
  
