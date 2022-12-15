@@ -14,8 +14,7 @@
             </x-slot>
             <div class="post">
             @foreach($recording as $rc)
-            @if(Auth::id() == $rc->user_id)
-            {{ $id = $rc->user_id }}
+            @if(Auth::id() == $id=$rc->user_id)
             <div class="py-12 size">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <p class="time" style="text-align:right;">{{ $rc->updated_at }}</p>

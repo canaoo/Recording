@@ -12,14 +12,14 @@
     padding: 3em 0;
 }
 .post {
-    width: 70%;
-    
+    width: 60%;
 }
 .custom {
     width: 20%;
 }
+
 .fixed {
-    position: fixed;
+    float: right;
 }
 .recording_button {
     padding-left: 330px;
