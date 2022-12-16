@@ -19,7 +19,9 @@ https://keyboardrecordings.herokuapp.com/
 録音の投稿は、登録済みユーザのみです。
  ![top_keyboard](https://user-images.githubusercontent.com/109420472/207630685-9653f19c-a12b-4aae-bdf5-e41878b62ed0.png)
  ![top_form](https://user-images.githubusercontent.com/109420472/199159501-de26bba9-e9a8-4632-869e-7a43b6ac0f14.png)
- <br><br>
+ <br>
+ ※　ログイン済みのユーザの画面のみで表示される
+ <br>
  
  【タイムライン画面】
  自分や他の人が投稿した録音を聴くことができます。
