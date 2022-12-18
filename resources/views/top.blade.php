@@ -15,10 +15,6 @@
             
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <!--<nav style="text-align:right;">
-                        <a href="#概要" class="text-sm text-gray-700 dark:text-gray-500 underline">Webアプリの概要</a>
-                        <a href="#操作方法"  class="text-sm text-gray-700 dark:text-gray-500 underline">ピアノの操作方法</a>
-                    </nav>-->
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 bg-white border-b border-gray-200 keyboard">
                             <!-- 操作ボタン -->
@@ -83,13 +79,6 @@
                             </form>
                             <br>
                             <br>
-                            <!--<h1 id="概要">Webアプリの概要</h1>
-                            <p>Web Audio APIを用いて作られています。</p><br>
-                            <h1 id="操作方法">キーボードの操作方法</h1>
-                            <p>マウスでクリックしてください。</p><br>-->
-                            
-                            
-                            
                         </div>
                     </div>
                 </div>
