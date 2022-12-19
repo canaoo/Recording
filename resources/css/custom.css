@@ -24,5 +24,9 @@
 .recording_button {
     padding-left: 330px;
 }
+.btn {
+    border: solid 1px;
+    padding: 2px 5px;
+}
 
 

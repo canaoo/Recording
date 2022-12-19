@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>検索</title>
+        <link href="{{ secure_asset('build/assets/custom.7447f65f.css') }}" rel="stylesheet" media="all">
     </head>
     <body>
         <x-app-layout>
@@ -16,7 +17,7 @@
                         @csrf
                         <p style="margin-left: 5%;">
                             <input type="search" name="search" value="{{request('search')}}" placeholder="曲名で検索">
-                            <input type="submit">
+                            <input type="submit" value="検索" class="btn">
                         </p>
                     </form>
                 </div>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>お問い合わせ</title>
-        <!--<link href="{{ secure_asset('build/assets/custom.7447f65f.css') }}" rel="stylesheet" media="all">-->
+        <link href="{{ secure_asset('build/assets/custom.7447f65f.css') }}" rel="stylesheet" media="all">
     </head>
     <body>
         <x-app-layout>
@@ -21,9 +21,9 @@
                             <form action="" method="POST">
                                 @csrf
                                 <p><label>ユーザ名</label><br>
-                                    <input type="text" name="name" style="width:200px;"></p><br>
+                                    <input type="text" name="name" style="width:300px;height:35px;"></p><br>
                                 <p><label>メールアドレス</label><br>
-                                    <input type="text" name="mail" style="width:200px;"></p><br>
+                                    <input type="text" name="mail" style="width:300px;height:35px;"></p><br>
                                 <p><label>お問い合わせ内容</label><br>
                                     <textarea name="message" rows="3" cols="40"></textarea></p><br>
                                 <button class="btn btn-success">送信する</button>
