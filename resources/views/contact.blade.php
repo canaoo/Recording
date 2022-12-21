@@ -25,7 +25,7 @@
                                 <p><label>メールアドレス</label><br>
                                     <input type="text" name="mail" style="width:300px;height:35px;"></p><br>
                                 <p><label>お問い合わせ内容</label><br>
-                                    <textarea name="message" rows="3" cols="40"></textarea></p><br>
+                                    <textarea name="message" rows="3" cols="40"></textarea></p>
                                 <button class="btn btn-success">送信する</button>
                             </form>
                         </div>

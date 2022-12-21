@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .header {
-    padding: 5px;
-    height: 20px;
+    height: 10px;
+    margin-bottom: 5px;
 }
 .center {
     text-align: center;
@@ -31,6 +31,7 @@
 .btn {
     border: solid 1px;
     padding: 2px 5px;
+    margin-top: 5px;
 }
 
 
