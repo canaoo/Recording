@@ -40,7 +40,6 @@
                     <span class="ml-2 text-sm text-gray-600">{{ __('次回から自動的にログインする') }}</span>
                 </label>
             </div>
-
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
