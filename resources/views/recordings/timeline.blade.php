@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>タイムライン</title>
-        <!--<link rel="stylesheet" href="./css/">-->
+        <link href="{{ secure_asset('build/assets/custom.css') }}" rel="stylesheet" media="all">
     </head>
     <body>
         <x-app-layout>
