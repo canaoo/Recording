@@ -50,6 +50,7 @@
                 <div class="overflow-hidden sm:rounded-lg p-6 bg-white border-b border-gray-200">
                     @if(Auth::id() == $id)
                     <h3>プロフィール</h3>
+                    <hr>
                     <br>
                     <p>{{ Auth::user()->name }} さん</p>
                     <br>

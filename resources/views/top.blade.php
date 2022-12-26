@@ -75,7 +75,7 @@
                                 <p><lavel>音声ファイル</lavel>
                                     <input type="file" accept="audio/wav" name="recording_file" required></p>
                                 <br>
-                                <input type="submit" value="保存">
+                                <input type="submit" value="投稿" class="btn">
                             </form>
                             <br>
                             <br>
