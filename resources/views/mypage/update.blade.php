@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>マイページ</title>
+        <link href="{{ secure_asset('build/assets/custom.css') }}" rel="stylesheet" media="all">
     </head>
     <body>
         <x-app-layout>
@@ -24,7 +25,7 @@
                                 <textarea rows="3" cols="30" value="{{$memo}}"></textarea>-
                                 <br><br>-->
                                 <button type="button" onclick="history.back()">戻る</button>
-                                <input type="submit" name="action" value="保存する">
+                                <input type="submit" name="action" value="保存する" class="btn">
                                 <input type="hidden" name="recording_id" value="{{$id}}">
                             </form>
                         </div>
