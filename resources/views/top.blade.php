@@ -52,7 +52,7 @@
                 </div>
             </div>
             <!-- ログインユーザのみに投稿フォームを表示する -->
-            @if (Auth::user() != null)
+            @auth
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            @endif
+            @endauth
             <script src="{{ secure_asset('build/assets/main.js') }}"></script>
         </x-app-layout>
     </body>
