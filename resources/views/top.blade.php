@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <!-- ログインユーザのみに投稿フォームを表示する -->
+            <!-- ログインユーザのみに表示する -->
             @auth
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -68,6 +68,7 @@
                             
                         </div>
                         <div class="p-6 bg-white border-b border-gray-200">
+                            <!-- 投稿フォーム -->
                             <form action="/recordings/process" method="post" enctype="multipart/form-data" style="display:inline">
                                 @csrf
                                 <p><lavel>曲名</lavel>
