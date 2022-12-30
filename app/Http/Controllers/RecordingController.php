@@ -51,32 +51,5 @@ class RecordingController extends Controller
     {
         return view('top');
     }
-    /*public function confirm(Request $request)
-    {
-        $this->validate($request, [
-           'recording_name'  => 'required',
-           'recording_file' => 'required',
-        ]);
-        
-        $recording = new Recordings($request->all());
-        return view('confirm', compact('recording'));
-    }/*
-    public function process(Request $request)
-    {
-        $action = $request->get('action', 'back');
-        $input = $request->except('action');
-        if($action == '保存する') {
-            //送信処理などを実装
-            $param = [
-                'recording_name' => $request->input('name'),
-                'recording_file' => $request->input('recording_file'),
-            ];
-            DB::table('recordings')->insert($param);
-            
-            return view('complete');
-        } else {
-            return redirect()->route('top')->withInput($input);
-        }
-    }*/
     
 }
