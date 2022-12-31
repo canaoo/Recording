@@ -18,6 +18,7 @@
                     
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 bg-white border-b border-gray-200">
+                            <!-- 管理者画面へ送る -->
                             <form action="" method="POST">
                                 @csrf
                                 <p><label>ユーザ名</label><br>
