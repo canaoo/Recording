@@ -13,6 +13,7 @@
             </x-slot>
             <div class="py-12">
                 <div>
+                    <!-- 検索フォーム -->
                     <form method="get" action="/recordings/search">
                         @csrf
                         <p style="margin-left: 5%;">
