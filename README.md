@@ -16,7 +16,8 @@ https://keyboardrecordings.herokuapp.com/
 ## Features
 【トップ画面】
 キーボードの演奏、演奏の録音・ダウンロード、録音の投稿ができます。<br>
-録音の投稿は、登録済みユーザのみです。
+録音の投稿は、登録済みユーザのみです。<br>
+ゲストユーザーでも録音とそのダウンロードは可能です。
  ![top_keyboard](https://user-images.githubusercontent.com/109420472/207630685-9653f19c-a12b-4aae-bdf5-e41878b62ed0.png)
  ![top_form](https://user-images.githubusercontent.com/109420472/199159501-de26bba9-e9a8-4632-869e-7a43b6ac0f14.png)
  <br>
