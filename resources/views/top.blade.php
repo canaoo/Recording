@@ -58,14 +58,6 @@
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 bg-white border-b border-gray-200">
                             <h4 style="font-size:140%;font-weight: bold;">投稿フォーム</h4>
-                            @if ($errors->any())
-                                <ul>
-                            @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                            @endforeach
-                                </ul>
-                            @endif
-                            
                         </div>
                         <div class="p-6 bg-white border-b border-gray-200">
                             <!-- 投稿フォーム -->
