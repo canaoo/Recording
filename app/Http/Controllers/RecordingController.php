@@ -8,13 +8,14 @@ use Illuminate\Support\Facades\DB;
 
 class RecordingController extends Controller
 {
-    
+    /* タイムライン：投稿全表示 */
     public function timeline(Recordings $recording)
     {
         $recording = Recordings::latest('updated_at');
         return view('recordings/timeline')->with(['recording' => $recording->get()]);
     }
-
+    
+    /* 検索 */
     public function search(Recordings $recording)
     {
         // 登録順にレコーディングテーブルからデータを取る
@@ -41,6 +42,7 @@ class RecordingController extends Controller
         return view('search')->with(['recording' => $recording->paginate(8)]);//8投稿ごと
     }
     
+    /* マイページ：ログインユーザの投稿全表示 */
     public function mypage(Recordings $recording)
     {
         $recording = Recordings::latest('updated_at');
