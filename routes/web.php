@@ -42,6 +42,10 @@ Route::post('/recordings/update', [SaveController::class, 'update'])->middleware
 
 Route::post('/recordings/delete', [SaveController::class, 'delete'])->middleware(['auth', 'verified']);
 
+Route::get('/recordings/admin/inquiry', function() {
+    return view('admin/inquiry');
+})->name('inquiry');
+
 
 
 
