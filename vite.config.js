@@ -7,6 +7,7 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/css/custom.css',
+                'resources/css/inquiry.css',
                 'resources/scss/piano.scss',
                 'resources/js/app.js',
                 'resources/js/bootstrap.js',
