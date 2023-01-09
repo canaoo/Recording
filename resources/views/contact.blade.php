@@ -21,13 +21,15 @@
                             <!-- 管理者画面へ送る -->
                             <form action="" method="POST">
                                 @csrf
-                                <p><label>ユーザ名</label><br>
+                                <p><label>ユーザ名（任意）</label><br>
                                     <input type="text" name="name" style="width:300px;height:35px;"></p><br>
                                 <p><label>メールアドレス</label><br>
                                     <input type="text" name="mail" style="width:300px;height:35px;"></p><br>
+                                <p><label>件名</label><br>
+                                    <input type="text" name="name" style="width:300px;height:35px;"></p><br>
                                 <p><label>お問い合わせ内容</label><br>
-                                    <textarea name="message" rows="3" cols="40"></textarea></p>
-                                <button class="btn btn-success">送信する</button>
+                                    <textarea name="message" rows="3" cols="40"></textarea></p><br>
+                                <button class="btn btn-success">確認する</button>
                             </form>
                         </div>
                     </div>
