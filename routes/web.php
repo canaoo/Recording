@@ -30,6 +30,9 @@ Route::get('/recordings/mypage', [RecordingController::class, 'mypage'])->middle
 Route::get('/recordings/contact', function() {
     return view('contact');
 })->name('contact');
+Route::post('/recordings/contact', function() {
+    return view('contaact/confirm');
+});
 
 Route::get('/recordings/search', [RecordingController::class, 'search'])->name('search');
 
