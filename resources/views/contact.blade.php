@@ -19,7 +19,9 @@
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 bg-white border-b border-gray-200">
                             <!-- 確認画面へ送る -->
-                            <form action="" method="POST">
+                            <!-- 新しいコントローラ作成？→actionでconfirmに送れるように -->
+                            <!-- 次、動作確認してみる -->
+                            <form action="/recordings/contact" method="POST">
                                 @csrf
                                 <p><label>ユーザ名（任意）</label><br>
                                     <input type="text" name="name" style="width:300px;height:35px;"></p><br>
